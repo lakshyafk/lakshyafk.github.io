@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+/* Reset & Theme */
+:root {
+  --dark-bg: #0d0d0d;
+  --light-bg: #fefefe;
+  --primary-mint: #99f6e4;
+  --primary-metal: #e5e7eb;
+  --text-dark: #f3f4f6;
+  --text-light: #1f2937;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-dark);
+  transition: all 0.4s ease;
+}
+
+/* Light mode support */
+body.light {
+  background-color: var(--light-bg);
+  color: var(--text-light);
+}
+
+/* Torch Cursor */
+.torchlight {
+  position: fixed;
   pointer-events: none;
+  z-index: 1000;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(153,246,228,0.3) 0%, rgba(0,0,0,0) 80%);
+  mix-blend-mode: screen;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Animated Text */
+.animated-text {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #111, #99f6e4, #fff, #99f6e4, #111);
+  background-size: 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 400%;
+  }
+  100% {
+    background-position: 0%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(153, 246, 228, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-left: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 1rem;
 }
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  background-color: transparent;
+  border: 1px solid var(--text-dark);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+body.light .nav-button {
+  color: var(--text-light);
+  border-color: var(--text-light);
+}
+
+.nav-button:hover {
+  background-color: rgba(153, 246, 228, 0.1);
+}
+
+/* Add more sections styling as needed */

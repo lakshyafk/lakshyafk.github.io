@@ -1,0 +1,21 @@
+.resume {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.resume-download {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-download:hover {
+  background: var(--accent);
+  color: #000;
+}
