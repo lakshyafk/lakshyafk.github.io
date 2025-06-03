@@ -16,20 +16,33 @@ function App() {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
+  // Set banner and profile image based on theme
+  const bannerImage =
+    theme === "light"
+      ? `${process.env.PUBLIC_URL}/images/about-bg.png`
+      : `${process.env.PUBLIC_URL}/images/about-bg-dark.png`;
+
+  const profileImage =
+    theme === "light"
+      ? "/images/profile.jpg"
+      : "/images/profile-clr.jpg";
+
   return (
     <div>
       <Navbar toggleTheme={toggleTheme} theme={theme} />
 
       {/* ABOUT SECTION */}
       <section id="about" className="about-section">
-        <div className="about-banner">
-
+        <div
+          className="about-banner"
+          style={{ backgroundImage: `url(${bannerImage})` }}
+        >
           <h1 className="about-heading">Hello There</h1>
         </div>
 
         <div className="about-content">
           <img
-            src="/images/profile.jpg"
+            src={profileImage}
             alt="Profile"
             className="profile-pic"
           />
