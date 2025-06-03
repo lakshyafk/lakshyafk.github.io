@@ -5,19 +5,19 @@ import "../styles/Navbar.css";
 
 const texts = [
   "Lakshy Choudhary",
-  "Problem Solver",
-  "ML Enthusiast",
   "Web Developer",
-  "Tonight's the Night",
   "Creative Coder",
-  "Learner",
-  "Brainrot Thinker",
+  "Problem Solver",
+  "Tech Enthusiast",
+  "Curious Learner",
+  "ML Enthusiast",
+  "Midnight Debugger",
   "Game Enthusiast",
   "Masti Paglu",
-  "Tonight's the Night",
-  "Creative Coder",
-  "Learner",
-  "Brainrot Thinker"
+  "Chronic Brainrot",
+  "Lazy Perfectionist",
+  "Heavy Sleeper",
+  "Tonight's the Night"
 ];
 
 
