@@ -22,12 +22,8 @@ function App() {
 
       {/* ABOUT SECTION */}
       <section id="about" className="about-section">
-        <div
-          className="about-banner"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/images/about-bg.png)`,
-          }}
-        >
+        <div className="about-banner">
+
           <h1 className="about-heading">Hello There</h1>
         </div>
 
