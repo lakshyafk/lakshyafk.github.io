@@ -72,7 +72,7 @@ export default function Navbar({ toggleTheme, theme }) {
         </button>
         <a
           className="nav-btn"
-          href="/resume.pdf"
+          href={process.env.PUBLIC_URL + "/resume.pdf"}
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -21,17 +21,17 @@ function App() {
   // Preload both profile images
   useEffect(() => {
     const lightImage = new Image();
-    lightImage.src = "/images/profile.jpg";
+    lightImage.src = process.env.PUBLIC_URL + "/images/profile.jpg";
 
     const darkImage = new Image();
-    darkImage.src = "/images/profile-clr.jpg";
+    darkImage.src = process.env.PUBLIC_URL + "/images/profile-clr.jpg";
   }, []);
 
   // Image source depends on current theme
   const profileImage =
     theme === "light"
-      ? "/images/profile.jpg"
-      : "/images/profile-clr.jpg";
+      ? process.env.PUBLIC_URL + "/images/profile.jpg"
+      : process.env.PUBLIC_URL + "/images/profile-clr.jpg";
 
   // Reset imageLoaded when image source changes
   useEffect(() => {
@@ -88,7 +88,9 @@ function App() {
           <div className="about-text">
             <h2>About Me</h2>
             <p>
-              Namaskara :Da
+              Namaskara :D !
+              </p>
+              <p>
               I am <strong>Lakshy Choudhary</strong>, a B.E. in Computer Science student in my IIIrd Semester at Dayananda Sagar College of Engineering, Bengaluru.
             </p>
             <p>
