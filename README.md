@@ -4,7 +4,7 @@ Hi! I'm **Lakshy Choudhary**, a B.E. Computer Science student in my IIIrd Semest
 
 ## About Me
 
-I'm passionate about software development and enjoy building full-stack applications. I'm proficient in languages like **C, C++, Go, Python, and TypeScript**, and I work with frameworks such as **React.js, Next.js, FastAPI, and Django**.
+I'm passionate about software development and enjoy building full-stack applications. I'm proficient in languages like **C, C++, Go, Python**, and I work with frameworks such as **React.js, Next.js, FastAPI, and Django**.
 
 ## Tech Stack
 

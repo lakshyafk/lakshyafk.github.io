@@ -6,18 +6,19 @@ import "../styles/Navbar.css";
 const texts = [
   "Lakshy Choudhary",
   "Web Developer",
+  "Game Enthusiast",
   "Creative Coder",
   "Problem Solver",
   "Tech Enthusiast",
   "Curious Learner",
   "ML Enthusiast",
   "Midnight Debugger",
-  "Game Enthusiast",
   "Masti Paglu",
   "Chronic Brainrot",
-  "Lazy Perfectionist",
   "Heavy Sleeper",
-  "Tonight's the Night"
+  "Tonight's the Night",
+  "Confused Coder",
+  "Bihari"
 ];
 
 export default function Navbar({ toggleTheme, theme }) {
